@@ -28,6 +28,6 @@ The package is setup so you can easily add external packages to your project, wh
 ## NOTE:
 If you are having errors try deleting the node_modules folder and run `npm install` again.
 
-### Bunble your application and run in browser
+### Bunble your application and run it in the browser
 
 Run **npm run build** to bundle all your files to the /dist folder and after it's done run **npm run static** and open your browser at `http://127.0.0.1:8090/`.
