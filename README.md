@@ -21,7 +21,7 @@ The package is setup so you can easily add external packages to your project, wh
 
 
 ## npm scripts
-- **npm run gulp** will build the files inside the /dist folder and perform a watch. You are ready to start developing
+- **npm run start** will run webpack-dev-server and serve your contents from memory only on http://localhost:8080. You are ready to start developing
 - **npm run clean** will clean the dist folder
 - **npm run build**
 
