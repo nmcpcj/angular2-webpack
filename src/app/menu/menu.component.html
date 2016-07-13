@@ -1,0 +1,4 @@
+<ul>
+	<li [ngClass]="{active: 'dashboard' == active}"><a routerLink="/dashboard"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+	<li [ngClass]="{active: m.target == active}" attr.data-target="{{m.target}}" attr.data-index="{{i}}" *ngFor="let m of menus; let i=index"><a routerLink="/{{m.name}}">{{m.name}}</a></li>
+</ul>
