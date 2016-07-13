@@ -30,6 +30,6 @@ If you are having errors try deleting the **node_modules** folder and run `npm i
 
 ### Bunble your application and run it in the browser
 
-**npm run build** to bundle all your files to the /dist folder.run 
+**npm run build** to bundle all your files to the /dist folder.
 
 **npm run static** and open your browser at `http://127.0.0.1:8090/`.
