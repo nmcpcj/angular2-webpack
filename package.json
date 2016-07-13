@@ -6,6 +6,7 @@
     "start": "webpack-dev-server --inline --progress --port 8080",
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
+    "clean": "rimraf dist",
     "static": "http-server dist -p 8090 -o",
     "postinstall": "typings install"
   },

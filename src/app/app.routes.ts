@@ -4,9 +4,9 @@ import { DashboardRoutes } from './dashboard/dashboard.routes';
 import { UsersRoutes } from './users/users.routes';
 
 export const routes: RouterConfig = [
-	...DashboardRoutes,
-	...LoginRoutes,
-	...UsersRoutes
+  ...DashboardRoutes,
+  ...LoginRoutes,
+  ...UsersRoutes
 ];
 
 export const APP_ROUTER_PROVIDERS = [
