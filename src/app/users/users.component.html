@@ -10,7 +10,7 @@
 				<i class="fa fa-times pointer pull-right" aria-hidden="true" (click)="add()"></i>
 
 				<div class="json">{{diagnostic}}</div>
-				<div class="container">
+				<div class="container-fluid">
 				  <h4>Add User</h4>
 				  <form (ngSubmit)="onSubmit()" #weaponForm="ngForm">
 
@@ -52,6 +52,7 @@
 						<div *ngIf="!insert"><i class="fa fa-plus pointer" aria-hidden="true" (click)="add()"></i></div>
 					</div>
 					<div class="app-card-body">
+						<div class="loading" *ngIf="!users.length"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i>  Loading..</div>
 						<div class="user row" *ngFor="let u of users" (click)="delete(u)">
 							<div class="user-avatar col-sm-6 col-sm-push-6 text-right">
 								<img src="{{u.image}}">
