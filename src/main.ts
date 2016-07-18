@@ -7,6 +7,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common'; // Add
 import { disableDeprecatedForms, provideForms } from '@angular/forms';
 //import { BaseService } from './base.service';
 import { AppComponent } from './app/app.component';
+import { AuthService } from './app/auth/auth.service';
+import { Application } from './app/common/application';
 
 if (process.env.ENV) console.log('environment:', process.env.ENV);
 
@@ -16,6 +18,8 @@ if (process.env.ENV === 'production') {
 
 bootstrap(AppComponent, [
 	//BaseService,
+	Application,
+	AuthService,
 	APP_ROUTER_PROVIDERS,
 	HTTP_PROVIDERS,
 	disableDeprecatedForms(),

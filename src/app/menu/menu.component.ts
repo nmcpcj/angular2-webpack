@@ -1,4 +1,4 @@
-// app/weapons.component.ts
+import { Application } from '../common/application';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ROUTER_DIRECTIVES, Router } from '@angular/router';
 
@@ -13,7 +13,7 @@ export class MenuComponent {
   menus: Array<any>;
   active:string = '';
 
-  constructor(private router:Router) {
+  constructor(private router:Router, private _application:Application) {
     
     this.menus = [
       { name: 'users', target: 'users' }
@@ -21,10 +21,15 @@ export class MenuComponent {
   }
 
   ngOnInit() {
+    // remove hash from router name
     this.active = this.router.url.replace(/[^A-Z0-9]+/ig, "");
   }
 
   ngOnDestroy() {}
 
   menuSelect(name:string) {}
+
+  logout() {
+    this._application.session.logout();
+  }
 }

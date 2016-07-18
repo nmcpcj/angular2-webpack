@@ -4,7 +4,7 @@
 	</div>
 	<div class="content">
 		<h4>Welcome to the {{componentName}}!</h4>
-		<div class="users">
+		<div class="users" *ngIf="users.length">
 
 			<div *ngIf="insert" class="app-card">
 				<i class="fa fa-times pointer pull-right" aria-hidden="true" (click)="add()"></i>

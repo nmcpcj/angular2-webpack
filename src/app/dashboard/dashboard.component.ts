@@ -15,7 +15,7 @@ export class DashboardComponent {
   private error:boolean = false;
 
   constructor(_service:DashboardService) {
-    
+
     _service.getData().subscribe(
       data => { this.panels = data; },
       err => { this.error = true }

@@ -68,7 +68,8 @@ module.exports = validate({
 
     // TODO: remove for production - for duumy data only
     new CopyWebpackPlugin([
-      { from: './public/dummy', to: 'js/dummy'}
+      { from: './public/dummy', to: 'js/dummy'},
+      { from: './src/auth.html', to: 'auth.html'}
     ])
   ]
 });
