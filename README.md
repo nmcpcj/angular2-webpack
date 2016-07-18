@@ -14,6 +14,7 @@ Angular2 starter with webpack
 Install the dependencies with `npm install` or `sudo npm install`.
 
 ## Configuration
+The auth configurations are located in the src/app/common/config-example.ts file. Since configurations may vary from local setup to production setup, to enable these you must do a cp src/app/common/config_example.ts config.ts first. The generated file will be your configuration file, and should never be commited back to the repo.
 
 ## Adding packages
 The package is setup so you can easily add external packages to your project, while making it easier to manage dependencies. Doing
