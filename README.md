@@ -3,8 +3,7 @@ Angular2 starter with webpack
 
 ## Features
 - Webpack;
-- CSS pre-compile through SASS;
-- SASS and JS minification and concatenation;
+- Oauth2 authentication flow;
 
 ## Requirements
 - [nodejs](https://nodejs.org/)
@@ -31,6 +30,9 @@ If you are having errors try deleting the **node_modules** folder and run `npm i
 
 ### Bunble your application and run it in the browser
 
-**npm run build** to bundle all your files to the /dist folder.
+  * Production / Staging
+    * **npm run build** to bundle all your files to the /dist folder.
 
-**npm run static** and open your browser at `http://127.0.0.1:8090/`.
+  * Development
+    * Run `npm install -g http-server` or add it to your dependencies if you want it local.
+    * **npm run static** and open your browser at `http://127.0.0.1:8090/`.
